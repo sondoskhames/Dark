@@ -1264,3 +1264,81 @@ to{
     }
 }
 
+
+@media (max-width: 992px) {
+    .navbar { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .hero-content { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 40px; 
+    }
+    .hero-text-block {
+        max-width: 100%;
+    }
+    .hero-action-buttons { 
+        justify-content: center; 
+    }
+    .hero-icon {
+        font-size: 90px; /* تصغير الأيقونة قليلاً لتناسب الشاشات المتوسطة */
+    }
+    .properties-grid-container { 
+        grid-template-columns: repeat(2, 1fr); /* كارتين بجانب بعضهما في التابلت */
+    }
+    .about-us-container { 
+        flex-direction: column; 
+        gap: 40px;
+    }
+    .about-text-side, .about-image-side {
+        width: 100%;
+    }
+    .about-image-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .services-grid-box { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap; /* السماح للروابط بالالتفاف إذا زاد عددها */
+        justify-content: center;
+        gap: 15px 20px;
+    }
+    .hero-text-area h1 {
+        font-size: 32px; /* تصغير العنوان الرئيسي ليناسب شاشة الموبايل */
+    }
+    .stats-flex-container { 
+        flex-direction: column !important; /* الإحصائيات تحت بعضها في الموبايل */
+        gap: 24px; 
+    }
+    .properties-grid-container { 
+        grid-template-columns: 1fr; /* كارت واحد ممتد في الصف للموبايل */
+    }
+    .services-grid-box { 
+        grid-template-columns: 1fr; /* كارت خدمات واحد في الصف للموبايل */
+    }
+    .table-responsive-box { 
+        overflow-x: auto; /* تفعيل السحب الأفقي السحري للجدول */
+        -webkit-overflow-scrolling: touch;
+    }
+    .pricing-data-table { 
+        min-width: 550px; /* تضمن بقاء أبعاد الجدول مريحة للقراءة عند السحب */
+    }
+    .actual-contact-form {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .whatsapp-floating-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+
